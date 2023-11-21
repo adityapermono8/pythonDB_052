@@ -43,7 +43,7 @@ def simpan_data(nama, biologi, fisika, inggris, prediksi):
     conn.commit()
     conn.close()
 
-    messagebox.showinfo("Info", "Data berhasil disimpan!")
+    messagebox.showinfo("Info", "Data berhasil disimpan!!")
 
 # Fungsi untuk menampilkan hasil prediksi
 def hasil_prediksi(nama, biologi, fisika, inggris, result_label):
@@ -58,7 +58,7 @@ root = tk.Tk()
 root.title("Aplikasi Prediksi Prodi Pilihan")
 
 # Label judul
-judul_label = tk.Label(root, text="Aplikasi Prediksi Prodi Pilihan", font=("Helvetica", 16))
+judul_label = tk.Label(root, text="Aplikasi Prediksi Prodi Pilihan!!", font=("Times New Roman", 16))
 judul_label.grid(row=0, column=0, columnspan=2, pady=10)
 
 # Entry untuk input nilai mata pelajaran
@@ -83,11 +83,11 @@ inggris_entry = tk.Entry(root)
 inggris_entry.grid(row=4, column=1, padx=10, pady=5)
 
 # Label luaran hasil prediksi
-result_label = tk.Label(root, text="Hasil Prediksi: ", font=("Helvetica", 12))
+result_label = tk.Label(root, text="Hasil Prediksi!!: ", font=("Times New Roman", 12))
 result_label.grid(row=5, column=0, columnspan=2, pady=10)
 
 # Button untuk hasil prediksi
-prediksi_button = tk.Button(root, text="Hasil Prediksi", command=lambda: hasil_prediksi(nama_entry, biologi_entry, fisika_entry, inggris_entry, result_label))
+prediksi_button = tk.Button(root, text="Hasil Prediksi!!", command=lambda: hasil_prediksi(nama_entry, biologi_entry, fisika_entry, inggris_entry, result_label))
 prediksi_button.grid(row=6, column=0, columnspan=2, pady=10)
 
 # Menjalankan GUI
